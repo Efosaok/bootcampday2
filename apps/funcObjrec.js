@@ -1,4 +1,6 @@
-function words(sentence) {
+var file = {}
+
+file.words =function(sentence) {
        var counts = {};
        sentence.split(/\s+/ ).forEach(function (w) {
            if (w in counts) {
@@ -12,3 +14,4 @@ function words(sentence) {
            }
            else {
                counts[w] = 1;
+module.exports = file                  
